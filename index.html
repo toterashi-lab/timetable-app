@@ -217,12 +217,14 @@
       {from:"チェルシーホテル",to:"Star Lounge",walk:"約4分",note:"夕方から夜本命への移動"}
     ];
     const KEY="sparkquest-v3";
+    const PLAN_RESET_VERSION="ready-2026-07-11-clean";
     const EVENT_DAY="2026-07-11";
     const memoTemplateText="待機列:\n入場規制:\n移動:\n体力:\n次に優先するもの:\n買う/話すこと:\n";
     let state={checks:{},statuses:{},memo:"",page:"home",filter:"all",hideSkip:false,scrolls:{}};
     try{state={...state,...JSON.parse(localStorage.getItem(KEY)||"{}")}}catch(e){}
     if(!state.statuses)state.statuses={};
     if(!state.scrolls)state.scrolls={};
+    if(state.planResetVersion!==PLAN_RESET_VERSION){state.statuses={};state.checks={};state.planResetVersion=PLAN_RESET_VERSION}
     Object.keys(state.checks||{}).forEach(id=>{if(state.checks[id]&&!state.statuses[id])state.statuses[id]="go"});
     const save=()=>localStorage.setItem(KEY,JSON.stringify(state));
     const kindLabel=k=>k==="live"?"LIVE":k==="benefit"?"特典会":"判断";
