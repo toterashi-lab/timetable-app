@@ -29,10 +29,13 @@
     .label{font-size:10px;font-weight:950;letter-spacing:.12em;color:var(--pink)}
     .priority-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.mini{padding:14px;margin:0;box-shadow:none}.mini strong{display:block;margin:6px 0 3px;font-size:15px}.mini small{color:var(--muted);font-weight:700}.main{border:1.5px solid #ffc3d9}.priority{border:1.5px solid #d8c9ff}
     .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.status-tile{padding:13px 10px;text-align:center}.status-tile strong{display:block;font-size:21px;color:var(--pink)}.status-tile small{display:block;margin-top:3px;color:var(--muted);font-size:10px;font-weight:850}
+    .now-panel{position:relative;overflow:hidden;background:#211d28;color:#fff}.now-panel:before{content:"";position:absolute;inset:-30px;background:radial-gradient(circle at 20% 20%,#ffdf4d 0 9%,transparent 10%),radial-gradient(circle at 82% 15%,#ff4f93 0 8%,transparent 9%),radial-gradient(circle at 78% 88%,#7957d5 0 10%,transparent 11%);opacity:.22}.now-panel>*{position:relative}.now-panel h3{margin:6px 0;font-size:25px}.now-panel p{margin:4px 0;color:#f3eaf6;font-size:12px;font-weight:800}.now-panel .countdown{display:inline-block;margin-top:8px;padding:5px 9px;border:2px solid #fff;border-radius:10px;background:#ffdf4d;color:#211d28;font-size:11px;font-weight:950}
+    .quick-grid,.control-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.quick-btn,.control-btn,.venue-jump,.memo-btn{border:2px solid var(--ink);border-radius:12px;background:#fff;padding:9px 10px;font-size:11px;font-weight:950;box-shadow:3px 3px 0 #d9d0e2}.quick-btn{background:#fff4a8}.control-btn.danger{background:#ffe4ef}.control-btn.main{background:#dcd0ff}.control-btn.on{background:#211d28;color:#fff}.memo-btn{margin-top:10px;background:#fff4a8}
     .check-row{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:850}.check-row:last-child{border:0}.mission-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.mission-top span{line-height:1.35}.mission-status{font-size:10px;font-weight:950;color:var(--muted)}
     .status-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.status-btn{border:2px solid var(--ink);border-radius:9px;background:#fff;padding:6px 9px;font-size:10px;font-weight:950;box-shadow:2px 2px 0 #d9d0e2}.status-btn.go.on{background:#ffdf4d;box-shadow:2px 2px 0 var(--ink)}.status-btn.maybe.on{background:#dcd0ff;box-shadow:2px 2px 0 var(--ink)}.status-btn.skip.on{background:#ece8ef;color:#777;box-shadow:2px 2px 0 var(--ink)}
     .filters{display:flex;gap:7px;overflow:auto;padding:2px 0 9px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{flex:none;border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:99px;padding:8px 12px;font-size:11px;font-weight:900}.filter.on{color:#fff;border-color:var(--pink);background:var(--pink)}
     .timeline{position:relative}.event{display:grid;grid-template-columns:58px 1fr;gap:9px;margin:10px 0}.event-time{padding-top:14px;font-size:12px;font-weight:950;color:#4b4550}.event-time small{display:block;margin-top:2px;color:#a29ba5;font-size:9px}.event-card{position:relative;padding:13px 14px;border-radius:17px;background:#fff;border:1px solid var(--line)}.event-card:before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:5px;background:#c8c1ca}.event[data-kind="live"] .event-card:before{background:var(--pink)}.event[data-kind="benefit"] .event-card:before{background:var(--purple)}.event[data-rank="S"] .event-card{border-color:#ffb8d2;background:linear-gradient(135deg,#fff,#fff7fa)}.event[data-rank="A"] .event-card{border-color:#d8c9ff}.event[data-rank="B"] .event-card{border-color:#f0d276;background:#fffdf5}.event-title{font-size:14px;font-weight:900}.event-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:6px;color:var(--muted);font-size:10px;font-weight:800}.pill{padding:3px 6px;border-radius:20px;background:var(--pink-soft);color:var(--pink)}.benefit{background:var(--purple-soft);color:var(--purple)}.rank-pill{background:#f3f0f4;color:#6e6670}.rank-S{background:#ffe5ef;color:#e43c7c}.rank-A{background:var(--purple-soft);color:var(--purple)}.rank-B{background:#fff3c4;color:#8a6800}.unknown{color:#b16c00}.warning{color:#c05b00}.event-note{margin-top:7px;color:#817982;font-size:10px;font-weight:700}.area{color:var(--purple);font-weight:950}.star{color:var(--pink)}.event.go .event-card{opacity:1;background:#fff4a8;box-shadow:4px 4px 0 #211d28}.event.maybe .event-card{background:#f2edff;box-shadow:4px 4px 0 #7957d5}.event.skip .event-card{opacity:.62;background:#f1eef2}.event-status{display:inline-block;margin-left:5px;padding:2px 6px;border:1.5px solid var(--ink);border-radius:6px;background:#fff;font-size:9px;font-weight:950}.event.go .event-status{background:#ffdf4d}.event.maybe .event-status{background:#dcd0ff}.event.skip .event-status{background:#ece8ef}
+    .move-card{display:grid;grid-template-columns:58px 1fr;gap:9px;margin:6px 0}.move-card div:last-child{padding:10px 12px;border:2px dashed var(--ink);border-radius:12px;background:#e8fbff;box-shadow:3px 3px 0 #9bdbea;font-size:11px;font-weight:900}.move-card b{color:var(--pink)}.move-card small{display:block;margin-top:3px;color:var(--muted);font-size:10px}.venue-jump{margin-top:9px;padding:6px 9px;background:#e8fbff;font-size:10px}
     .decision-banner{margin:15px 0 10px;padding:15px 16px;border-radius:19px;background:linear-gradient(135deg,#fff1f6,#f3efff);border:1px solid #efcfe1}.decision-banner strong{display:block;color:#653c7e}.decision-banner small{color:var(--muted);font-weight:700}
     .empty{padding:40px 15px;text-align:center;color:var(--muted);font-size:13px;font-weight:800}
     .oshi-card{padding:0;overflow:hidden}.oshi-head{padding:17px 18px 13px;border-bottom:1px solid var(--line)}.oshi-head div{display:flex;justify-content:space-between;align-items:center}.oshi-head h3{margin:6px 0 0;font-size:20px}.oshi-events{padding:8px 18px}.oshi-line{display:grid;grid-template-columns:92px 1fr;gap:6px;padding:9px 0;font-size:12px;border-bottom:1px solid var(--line)}.oshi-line:last-child{border:0}.oshi-line b{color:var(--pink)}.rank{font-size:10px;font-weight:950;padding:5px 8px;border-radius:20px;background:var(--pink-soft);color:var(--pink)}.rank.sub{background:var(--purple-soft);color:var(--purple)}
@@ -41,6 +44,7 @@
     .notice{padding:12px 14px;border-radius:15px;background:#fff7e9;color:#895b14;font-size:11px;font-weight:750;line-height:1.6}
     .choice{position:relative}.choice h3{margin:5px 0;font-size:16px}.choice p{margin:0;color:var(--muted);font-size:11px;font-weight:700}.choice .time-tag{position:absolute;right:14px;top:14px;color:var(--purple);font-weight:950;font-size:12px}.recommended{border:1.5px solid #ffb8d2;background:linear-gradient(135deg,#fff,#fff5f9)}.recommended:after{content:"軸";position:absolute;right:13px;bottom:13px;padding:4px 7px;border-radius:20px;background:var(--pink);color:white;font-size:9px;font-weight:950}
     .decision-table{display:grid;gap:8px}.decision-row{display:grid;grid-template-columns:68px 1fr 56px;gap:8px;align-items:center;padding:12px;border:2px solid var(--ink);border-radius:12px;background:#fff;box-shadow:3px 3px 0 #d9d0e2}.decision-row.axis{background:#fff4a8;box-shadow:4px 4px 0 #f0b928}.decision-row b{font-size:12px}.decision-row small{display:block;margin-top:3px;color:var(--muted);font-size:10px;font-weight:800}.decision-priority{text-align:center;font-size:10px;font-weight:950;color:var(--pink)}
+    .benefit-list,.log-list{display:grid;gap:8px}.benefit-row,.log-row{display:grid;grid-template-columns:62px 1fr auto;gap:8px;align-items:center;padding:10px;border:2px solid var(--ink);border-radius:12px;background:#fff;box-shadow:3px 3px 0 #d9d0e2;font-size:11px;font-weight:900}.benefit-row b,.log-row b{color:var(--purple)}.conflict-row{background:#fff5b8}
     textarea{display:block;width:100%;min-height:135px;padding:14px;border:1px solid var(--line);border-radius:16px;resize:vertical;outline:none;background:#fbfafc;color:var(--ink);font-size:14px;line-height:1.6}textarea:focus{border-color:#e9a3c0;box-shadow:0 0 0 3px #fff0f6}.saved{height:16px;margin:8px 2px 0;text-align:right;color:var(--pink);font-size:10px;font-weight:850}
     .tabs{position:fixed;z-index:20;left:50%;bottom:0;transform:translateX(-50%);display:grid;grid-template-columns:repeat(5,1fr);width:100%;max-width:430px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);border-top:1px solid var(--line);backdrop-filter:blur(18px)}.tab{border:0;background:transparent;color:#9a939d;padding:4px 0 1px;font-size:9px;font-weight:850}.tab svg{display:block;width:23px;height:23px;margin:0 auto 3px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.tab.on{color:var(--pink)}
     /* Graphic recording: marker colors, hand-drawn borders and sticky notes. */
@@ -71,6 +75,17 @@
 
     <section class="page on" id="home">
       <div class="hero"><div class="eyebrow">TODAY'S MISSION</div><h1>SPARK<br>QUEST</h1><p>推しを追って、今日を攻略する。</p></div>
+      <div class="section-head"><h2>NOW STAGE</h2><span>現在時刻モード</span></div>
+      <div class="card now-panel" id="nowPanel"></div>
+      <div class="section-head"><h2>QUICK JUMP</h2><span>一発移動</span></div>
+      <div class="quick-grid" id="quickJumps"></div>
+      <div class="section-head"><h2>CONTROL DECK</h2><span>準備/表示</span></div>
+      <div class="control-grid">
+        <button class="control-btn main" id="prepMain">本命だけ行く</button>
+        <button class="control-btn main" id="prepAll">本命+優先 行く</button>
+        <button class="control-btn" id="toggleSkip">スキップ非表示</button>
+        <button class="control-btn danger" id="resetPlan">全ステータス解除</button>
+      </div>
       <div class="section-head"><h2>MAIN QUEST</h2><span id="progressCount">0 / 4 COMPLETE</span></div>
       <div class="card"><div class="progress-row"><span>本命ミッション進捗</span><strong id="progressPct">0%</strong></div><div class="progress"><i id="progressBar"></i></div></div>
       <div class="section-head"><h2>NEXT EVENT</h2><span id="nextState">UP NEXT</span></div>
@@ -91,9 +106,15 @@
       <div class="section-head"><h2>CHECKLIST</h2><span>AUTO SAVE</span></div>
       <div class="card" id="mainChecklist"></div>
 
+      <div class="section-head"><h2>特典会リスト</h2><span>MEET & GREET</span></div>
+      <div class="benefit-list" id="benefitList"></div>
+
+      <div class="section-head"><h2>被り注意まとめ</h2><span>CONFLICTS</span></div>
+      <div class="benefit-list" id="conflictList"></div>
+
       <div class="section-head"><h2>ALL TIMELINE</h2><span>全タイテ</span></div>
       <div class="filters" id="filters">
-        <button class="filter on" data-filter="all">すべて</button><button class="filter" data-filter="live">LIVE</button><button class="filter" data-filter="benefit">特典会</button><button class="filter" data-filter="decision">判断</button><button class="filter" data-filter="main">本命</button><button class="filter" data-filter="priority">優先</button>
+        <button class="filter on" data-filter="all">すべて</button><button class="filter" data-filter="go">行く</button><button class="filter" data-filter="maybe">保留</button><button class="filter" data-filter="skip">スキップ</button><button class="filter" data-filter="live">LIVE</button><button class="filter" data-filter="benefit">特典会</button><button class="filter" data-filter="decision">判断</button><button class="filter" data-filter="main">本命</button><button class="filter" data-filter="priority">優先</button><button class="filter" data-filter="conflict">被り</button>
       </div>
       <p style="margin:0 2px 10px;color:var(--muted);font-size:10px;font-weight:800">カードをタップして予定を選択・解除</p>
       <div class="timeline" id="homeTimelineList"></div>
@@ -127,9 +148,18 @@
         <div class="decision-row"><b>16:25</b><div><strong>アキストゼネコ</strong><small>移動時間と入場状況を見て判断</small></div><div class="decision-priority">保留</div></div>
         <div class="decision-row"><b>17:00</b><div><strong>はぐっと！</strong><small>FLORERISA後に余裕があれば候補</small></div><div class="decision-priority">候補</div></div>
       </div>
+      <div class="section-head"><h2>結論ボタン</h2><span>一括整理</span></div>
+      <div class="control-grid">
+        <button class="control-btn main decision-pick" data-choice="florerisa">FLORERISA特典会</button>
+        <button class="control-btn decision-pick" data-choice="miis">MiiS</button>
+        <button class="control-btn decision-pick" data-choice="akisto">アキストゼネコ</button>
+        <button class="control-btn decision-pick" data-choice="hagut">はぐっと！</button>
+      </div>
       <p class="notice">FLORERISA特典会を優先。余裕があれば17:00のはぐっと！だけ検討。夜のKAMAITACIに体力を残すため、ここで欲張りすぎない。</p>
       <div class="section-head"><h2>自由メモ</h2><span>AUTO SAVE</span></div>
-      <div class="card"><textarea id="memo" placeholder="待機列、入場規制、移動、物販状況などを記録…"></textarea><div class="saved" id="saved"></div></div>
+      <div class="card"><textarea id="memo" placeholder="待機列、入場規制、移動、物販状況などを記録…"></textarea><button class="memo-btn" id="memoTemplate">メモテンプレを入れる</button><div class="saved" id="saved"></div></div>
+      <div class="section-head"><h2>今日のログ</h2><span>行く予定</span></div>
+      <div class="log-list" id="logList"></div>
     </section>
   </main>
 
@@ -187,15 +217,23 @@
       {from:"チェルシーホテル",to:"Star Lounge",walk:"約4分",note:"夕方から夜本命への移動"}
     ];
     const KEY="sparkquest-v3";
-    let state={checks:{},statuses:{},memo:"",page:"home",filter:"all"};
+    const EVENT_DAY="2026-07-11";
+    const memoTemplateText="待機列:\n入場規制:\n移動:\n体力:\n次に優先するもの:\n買う/話すこと:\n";
+    let state={checks:{},statuses:{},memo:"",page:"home",filter:"all",hideSkip:false,scrolls:{}};
     try{state={...state,...JSON.parse(localStorage.getItem(KEY)||"{}")}}catch(e){}
     if(!state.statuses)state.statuses={};
+    if(!state.scrolls)state.scrolls={};
     Object.keys(state.checks||{}).forEach(id=>{if(state.checks[id]&&!state.statuses[id])state.statuses[id]="go"});
     const save=()=>localStorage.setItem(KEY,JSON.stringify(state));
     const kindLabel=k=>k==="live"?"LIVE":k==="benefit"?"特典会":"判断";
     const displayName=e=>`${e.name}${e.kind==="benefit"?" 特典会":""}`;
     const getStatus=id=>state.statuses[id]||"";
     const statusLabel=s=>s==="go"?"行く":s==="maybe"?"保留":s==="skip"?"スキップ":"未定";
+    const toMin=t=>{const [h,m]=t.split(":").map(Number);return h*60+m};
+    const nowEventMinutes=()=>{const n=new Date(),today=`${n.getFullYear()}-${String(n.getMonth()+1).padStart(2,"0")}-${String(n.getDate()).padStart(2,"0")}`;if(today<EVENT_DAY)return -1;if(today>EVENT_DAY)return 9999;return n.getHours()*60+n.getMinutes()};
+    const venueBase=v=>v==="特典会エリアE"?"ベルサールメイン":v==="特典会エリアO"?"THE GAME":v==="特典会エリアR"?"チェルシーホテル":v==="特典会エリアU"?"Star Lounge":v;
+    const routeBetween=(a,b)=>routes.find(r=>(r.from===venueBase(a)&&r.to===venueBase(b))||(r.to===venueBase(a)&&r.from===venueBase(b)));
+    const isConflict=e=>/被り|判断/.test(e.note)||e.kind==="decision";
     const statusButtons=id=>{
       const s=getStatus(id);
       return `<div class="status-actions" data-id="${id}" aria-label="予定ステータス">
@@ -204,6 +242,7 @@
         <button class="status-btn skip ${s==="skip"?"on":""}" data-id="${id}" data-status="skip">スキップ</button>
       </div>`;
     };
+    const venueButton=e=>e.venue==="未確認"||e.kind==="decision"?"":`<button class="venue-jump" data-venue="${e.venue}">会場を見る</button>`;
 
     function renderChecklist(){
       const ids=events.filter(e=>["S","A"].includes(e.rank)&&e.kind!=="decision").map(e=>e.id);
@@ -221,37 +260,82 @@
       const next=events.find(e=>["S","A"].includes(e.rank)&&e.kind!=="decision"&&getStatus(e.id)!=="go"&&getStatus(e.id)!=="skip");
       document.getElementById("nextEvent").innerHTML=next?`<span class="label">UP NEXT · RANK ${next.rank}</span><h3>${next.time} ${displayName(next)}</h3><p>${next.venue} ・ ${next.time}—${next.end}</p>`:`<span class="label">ALL CLEAR</span><h3>QUEST COMPLETE!</h3><p>優先ミッションをすべて達成しました。</p>`;
       document.getElementById("nextState").textContent=next?"UP NEXT":"COMPLETE";
+      renderNowPanel();
+      renderLists();
     }
     function setStatus(id,status){
       if(!status||getStatus(id)===status){delete state.statuses[id]}else{state.statuses[id]=status}
       state.checks[id]=getStatus(id)==="go";
-      save();renderChecklist();renderTimelines();
+      save();renderChecklist();renderTimelines();renderOshi();
     }
     function toggleGo(id){setStatus(id,getStatus(id)==="go"?"":"go")}
+    function passFilter(e){
+      if(state.hideSkip&&getStatus(e.id)==="skip")return false;
+      if(state.filter==="all")return true;
+      if(["go","maybe","skip"].includes(state.filter))return getStatus(e.id)===state.filter;
+      if(state.filter==="conflict")return isConflict(e);
+      return e.kind===state.filter||(state.filter==="main"&&e.rank==="S")||(state.filter==="priority"&&e.rank==="A");
+    }
     function renderEventList(targetId,list,emptyMessage){
       const statusClass=e=>getStatus(e.id)||"";
       const statusBadge=e=>getStatus(e.id)?`<span class="event-status">${statusLabel(getStatus(e.id))}</span>`:"";
       document.getElementById(targetId).innerHTML=list.length?list.map(e=>e.kind==="decision"
         ?`<article class="event decision-event ${statusClass(e)}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${getStatus(e.id)==="go"}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="decision-banner"><strong>⚠ 16:15—17:20 判断ゾーン ${statusBadge(e)}</strong><small>FLORERISA特典会 vs MiiS / アキストゼネコ / はぐっと！</small>${statusButtons(e.id)}</div></article>`
-        :`<article class="event ${statusClass(e)}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${getStatus(e.id)==="go"}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="event-card"><div class="event-title">${e.rank==="S"?'<span class="star">★ </span>':""}${displayName(e)} ${statusBadge(e)}</div><div class="event-meta"><span class="pill ${e.kind==="benefit"?"benefit":""}">${kindLabel(e.kind)}</span><span class="pill rank-pill rank-${e.rank}">RANK ${e.rank}</span><span class="${e.venue==="未確認"?"unknown":e.area?"area":""}">${e.venue==="未確認"?"⚠ 会場未確認":e.venue}</span>${/被り/.test(e.note)?'<span class="warning">⚠ 被り注意</span>':""}</div><div class="event-note">${e.note}</div>${statusButtons(e.id)}</div></article>`).join(""):`<div class="empty">${emptyMessage}</div>`;
+        :`<article class="event ${statusClass(e)}" id="event-${e.id}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${getStatus(e.id)==="go"}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="event-card"><div class="event-title">${e.rank==="S"?'<span class="star">★ </span>':""}${displayName(e)} ${statusBadge(e)}</div><div class="event-meta"><span class="pill ${e.kind==="benefit"?"benefit":""}">${kindLabel(e.kind)}</span><span class="pill rank-pill rank-${e.rank}">RANK ${e.rank}</span><span class="${e.venue==="未確認"?"unknown":e.area?"area":""}">${e.venue==="未確認"?"⚠ 会場未確認":e.venue}</span>${/被り/.test(e.note)?'<span class="warning">⚠ 被り注意</span>':""}</div><div class="event-note">${e.note}</div>${statusButtons(e.id)}${venueButton(e)}</div></article>`).join(""):`<div class="empty">${emptyMessage}</div>`;
+    }
+    function renderSelectedTimeline(list){
+      const html=[];
+      document.getElementById("timelineList").innerHTML=list.length?"":`<div class="empty">まだ予定が選択されていません。ホームで「行く」か「保留」を選んでください。</div>`;
+      if(!list.length)return;
+      list.forEach((e,i)=>{
+        if(i>0){
+          const prev=list[i-1],r=routeBetween(prev.venue,e.venue);
+          if(r&&venueBase(prev.venue)!==venueBase(e.venue))html.push(`<div class="move-card"><div></div><div>🚶 移動 <b>${r.walk}</b><small>${venueBase(prev.venue)} → ${venueBase(e.venue)}</small></div></div>`);
+        }
+        html.push(eventHTML(e));
+      });
+      document.getElementById("timelineList").innerHTML=html.join("");
+    }
+    function eventHTML(e){
+      const s=getStatus(e.id),statusClass=s||"",statusBadge=s?`<span class="event-status">${statusLabel(s)}</span>`:"";
+      return e.kind==="decision"
+        ?`<article class="event decision-event ${statusClass}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${s==="go"}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="decision-banner"><strong>⚠ 16:15—17:20 判断ゾーン ${statusBadge}</strong><small>FLORERISA特典会 vs MiiS / アキストゼネコ / はぐっと！</small>${statusButtons(e.id)}</div></article>`
+        :`<article class="event ${statusClass}" id="event-${e.id}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${s==="go"}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="event-card"><div class="event-title">${e.rank==="S"?'<span class="star">★ </span>':""}${displayName(e)} ${statusBadge}</div><div class="event-meta"><span class="pill ${e.kind==="benefit"?"benefit":""}">${kindLabel(e.kind)}</span><span class="pill rank-pill rank-${e.rank}">RANK ${e.rank}</span><span class="${e.venue==="未確認"?"unknown":e.area?"area":""}">${e.venue==="未確認"?"⚠ 会場未確認":e.venue}</span>${/被り/.test(e.note)?'<span class="warning">⚠ 被り注意</span>':""}</div><div class="event-note">${e.note}</div>${statusButtons(e.id)}${venueButton(e)}</div></article>`;
     }
     function bindEventSelection(){
       document.querySelectorAll(".event .status-btn").forEach(b=>b.onclick=e=>{e.stopPropagation();setStatus(+b.dataset.id,b.dataset.status)});
+      document.querySelectorAll(".venue-jump").forEach(b=>b.onclick=e=>{e.stopPropagation();showPage("map")});
       document.querySelectorAll(".event").forEach(card=>{
         card.onclick=e=>{if(e.target.closest(".status-btn"))return;toggleGo(+card.dataset.id)};
         card.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggleGo(+card.dataset.id)}}
       });
     }
     function renderTimelines(){
-      const homeList=events.filter(e=>state.filter==="all"||e.kind===state.filter||(state.filter==="main"&&e.rank==="S")||(state.filter==="priority"&&e.rank==="A"));
+      const homeList=events.filter(passFilter);
       const selectedList=events.filter(e=>["go","maybe"].includes(getStatus(e.id)));
       renderEventList("homeTimelineList",homeList,"該当する予定はありません");
-      renderEventList("timelineList",selectedList,"まだ予定が選択されていません。ホームで「行く」か「保留」を選んでください。");
+      renderSelectedTimeline(selectedList);
       document.getElementById("selectedCount").textContent=`${selectedList.length} SELECTED`;
       bindEventSelection();
     }
+    function renderNowPanel(){
+      const now=nowEventMinutes();
+      const upcoming=events.find(e=>toMin(e.end)>=now&&getStatus(e.id)!=="skip")||events[0];
+      const selectedNext=events.find(e=>["go","maybe"].includes(getStatus(e.id))&&toMin(e.end)>=now);
+      const focus=selectedNext||upcoming;
+      const delta=toMin(focus.time)-now;
+      const timing=now<0?"明日の準備":now>1440?"終了後ログ":delta>0?`あと${delta}分`:toMin(focus.end)>=now?"開催中":"次の候補";
+      document.getElementById("nowPanel").innerHTML=`<span class="label">NOW COMMAND</span><h3>${focus.time} ${displayName(focus)}</h3><p>${focus.venue} / ${focus.note}</p><span class="countdown">${timing}</span>`;
+    }
+    function renderLists(){
+      document.getElementById("benefitList").innerHTML=events.filter(e=>e.kind==="benefit").map(e=>`<div class="benefit-row"><b>${e.time}</b><span>${displayName(e)}<br><small>${e.venue}</small></span><span>${statusLabel(getStatus(e.id))}</span></div>`).join("");
+      document.getElementById("conflictList").innerHTML=events.filter(isConflict).map(e=>`<div class="benefit-row conflict-row"><b>${e.time}</b><span>${displayName(e)}<br><small>${e.note}</small></span><span>${statusLabel(getStatus(e.id))}</span></div>`).join("");
+      document.getElementById("logList").innerHTML=events.filter(e=>getStatus(e.id)==="go").map(e=>`<div class="log-row"><b>${e.time}</b><span>${displayName(e)}</span><span>${e.venue}</span></div>`).join("")||`<div class="empty">「行く」にした予定がログになります。</div>`;
+      document.getElementById("toggleSkip").classList.toggle("on",state.hideSkip);
+      document.getElementById("toggleSkip").textContent=state.hideSkip?"スキップ表示する":"スキップ非表示";
+    }
     function renderOshi(){
-      document.getElementById("oshiList").innerHTML=groups.map(g=>{const es=events.filter(e=>e.name===g.name);return `<article class="card oshi-card"><div class="oshi-head"><div><span class="label">${g.type==="main"?"MAIN QUEST":"PRIORITY"}</span><span class="rank ${g.type==="priority"?"sub":""}">RANK ${g.rank}</span></div><h3>${g.name}</h3></div><div class="oshi-events">${es.map(e=>`<div class="oshi-line"><b>${e.time}—${e.end}</b><span>${kindLabel(e.kind)} ・ ${e.venue}</span></div>`).join("")}</div></article>`}).join("");
+      document.getElementById("oshiList").innerHTML=groups.map(g=>{const es=events.filter(e=>e.name===g.name);return `<article class="card oshi-card"><div class="oshi-head"><div><span class="label">${g.type==="main"?"MAIN QUEST":"PRIORITY"}</span><span class="rank ${g.type==="priority"?"sub":""}">RANK ${g.rank}</span></div><h3>${g.name}</h3></div><div class="oshi-events">${es.map(e=>`<div class="oshi-line"><b>${e.time}—${e.end}</b><span>${kindLabel(e.kind)} ・ ${e.venue} ・ ${statusLabel(getStatus(e.id))}</span></div>`).join("")}</div></article>`}).join("");
     }
     function renderVenues(){
       document.getElementById("venueList").innerHTML=venues.map((v,i)=>`<div class="card venue"><div class="venue-no">${i+1}</div><div><h3>${v.name}</h3><p>${v.type} · ${v.note}</p></div></div>`).join("");
@@ -259,16 +343,30 @@
     }
     function showPage(id){
       if(!document.getElementById(id))id="home";
+      if(state.page)state.scrolls[state.page]=scrollY;
       document.querySelectorAll(".page,.tab").forEach(x=>x.classList.remove("on"));
       document.getElementById(id).classList.add("on");document.querySelector(`.tab[data-page="${id}"]`).classList.add("on");
-      state.page=id;save();window.scrollTo({top:0,behavior:"instant"});
+      state.page=id;save();setTimeout(()=>window.scrollTo({top:state.scrolls[id]||0,behavior:"instant"}),0);
+    }
+    function setMany(ids,status){ids.forEach(id=>{if(status)state.statuses[id]=status;else delete state.statuses[id];state.checks[id]=status==="go"});save();renderChecklist();renderTimelines();renderOshi()}
+    function renderQuickJumps(){
+      const targets=[0,3,9,13,19].map(id=>events[id]);
+      document.getElementById("quickJumps").innerHTML=targets.map(e=>`<button class="quick-btn" data-jump="${e.id}">${e.time}<br>${displayName(e)}</button>`).join("");
+      document.querySelectorAll(".quick-btn").forEach(b=>b.onclick=()=>{state.filter="all";document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("on",x.dataset.filter==="all"));renderTimelines();showPage("home");setTimeout(()=>document.getElementById(`event-${b.dataset.jump}`)?.scrollIntoView({behavior:"smooth",block:"center"}),60)});
     }
     document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>showPage(b.dataset.page));
     document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("on"));b.classList.add("on");state.filter=b.dataset.filter;save();renderTimelines()});
     const activeFilter=document.querySelector(`.filter[data-filter="${state.filter}"]`);if(activeFilter){document.querySelectorAll(".filter").forEach(x=>x.classList.remove("on"));activeFilter.classList.add("on")}
     const memo=document.getElementById("memo"),saved=document.getElementById("saved");memo.value=state.memo;
     let timer;memo.addEventListener("input",()=>{clearTimeout(timer);saved.textContent="入力中…";timer=setTimeout(()=>{state.memo=memo.value;save();saved.textContent="保存しました";setTimeout(()=>saved.textContent="",1500)},350)});
-    renderChecklist();renderTimelines();renderOshi();renderVenues();showPage(state.page);
+    document.getElementById("prepMain").onclick=()=>setMany(events.filter(e=>e.rank==="S"&&e.kind!=="decision").map(e=>e.id),"go");
+    document.getElementById("prepAll").onclick=()=>setMany(events.filter(e=>["S","A"].includes(e.rank)&&e.kind!=="decision").map(e=>e.id),"go");
+    document.getElementById("toggleSkip").onclick=()=>{state.hideSkip=!state.hideSkip;save();renderChecklist();renderTimelines()};
+    document.getElementById("resetPlan").onclick=()=>{if(confirm("行く/保留/スキップを全解除しますか？")){state.statuses={};state.checks={};save();renderChecklist();renderTimelines();renderOshi()}};
+    document.getElementById("memoTemplate").onclick=()=>{if(!memo.value.trim()||confirm("メモ末尾にテンプレを追加しますか？")){memo.value=(memo.value?memo.value+"\n\n":"")+memoTemplateText;state.memo=memo.value;save();saved.textContent="テンプレを保存しました";setTimeout(()=>saved.textContent="",1500)}};
+    document.querySelectorAll(".decision-pick").forEach(b=>b.onclick=()=>{const map={florerisa:12,miis:14,akisto:15,hagut:16};[12,14,15,16].forEach(id=>state.statuses[id]=id===map[b.dataset.choice]?"go":"skip");state.checks={...state.checks};[12,14,15,16].forEach(id=>state.checks[id]=state.statuses[id]==="go");save();renderChecklist();renderTimelines();renderOshi()});
+    let scrollTimer;addEventListener("scroll",()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{state.scrolls[state.page]=scrollY;save()},250)},{passive:true});
+    renderQuickJumps();renderChecklist();renderTimelines();renderOshi();renderVenues();showPage(state.page);
   </script>
 </body>
 </html>
