@@ -28,9 +28,11 @@
     .next{border:0;color:#fff;background:linear-gradient(135deg,#292330,#483755);box-shadow:0 12px 28px rgba(29,20,35,.18)}.next .label{color:#ffc2d9}.next h3{font-size:22px;margin:8px 0 4px}.next p{margin:0;color:#ddd4df;font-size:12px;font-weight:700}
     .label{font-size:10px;font-weight:950;letter-spacing:.12em;color:var(--pink)}
     .priority-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.mini{padding:14px;margin:0;box-shadow:none}.mini strong{display:block;margin:6px 0 3px;font-size:15px}.mini small{color:var(--muted);font-weight:700}.main{border:1.5px solid #ffc3d9}.priority{border:1.5px solid #d8c9ff}
-    .check-row{display:flex;gap:11px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:850}.check-row:last-child{border:0}.check-row input{appearance:none;width:23px;height:23px;flex:none;border:2px solid #d9d2da;border-radius:8px}.check-row input:checked{border-color:var(--pink);background:var(--pink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' d='m5 10 3 3 7-7'/%3E%3C/svg%3E")}
+    .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.status-tile{padding:13px 10px;text-align:center}.status-tile strong{display:block;font-size:21px;color:var(--pink)}.status-tile small{display:block;margin-top:3px;color:var(--muted);font-size:10px;font-weight:850}
+    .check-row{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:850}.check-row:last-child{border:0}.mission-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.mission-top span{line-height:1.35}.mission-status{font-size:10px;font-weight:950;color:var(--muted)}
+    .status-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.status-btn{border:2px solid var(--ink);border-radius:9px;background:#fff;padding:6px 9px;font-size:10px;font-weight:950;box-shadow:2px 2px 0 #d9d0e2}.status-btn.go.on{background:#ffdf4d;box-shadow:2px 2px 0 var(--ink)}.status-btn.maybe.on{background:#dcd0ff;box-shadow:2px 2px 0 var(--ink)}.status-btn.skip.on{background:#ece8ef;color:#777;box-shadow:2px 2px 0 var(--ink)}
     .filters{display:flex;gap:7px;overflow:auto;padding:2px 0 9px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{flex:none;border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:99px;padding:8px 12px;font-size:11px;font-weight:900}.filter.on{color:#fff;border-color:var(--pink);background:var(--pink)}
-    .timeline{position:relative}.event{display:grid;grid-template-columns:58px 1fr;gap:9px;margin:10px 0}.event-time{padding-top:14px;font-size:12px;font-weight:950;color:#4b4550}.event-time small{display:block;margin-top:2px;color:#a29ba5;font-size:9px}.event-card{position:relative;padding:13px 43px 13px 14px;border-radius:17px;background:#fff;border:1px solid var(--line)}.event-card:before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:5px;background:#c8c1ca}.event[data-kind="live"] .event-card:before{background:var(--pink)}.event[data-kind="benefit"] .event-card:before{background:var(--purple)}.event[data-rank="S"] .event-card{border-color:#ffb8d2;background:linear-gradient(135deg,#fff,#fff7fa)}.event[data-rank="A"] .event-card{border-color:#d8c9ff}.event[data-rank="B"] .event-card{border-color:#f0d276;background:#fffdf5}.event-title{font-size:14px;font-weight:900}.event-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:6px;color:var(--muted);font-size:10px;font-weight:800}.pill{padding:3px 6px;border-radius:20px;background:var(--pink-soft);color:var(--pink)}.benefit{background:var(--purple-soft);color:var(--purple)}.rank-pill{background:#f3f0f4;color:#6e6670}.rank-S{background:#ffe5ef;color:#e43c7c}.rank-A{background:var(--purple-soft);color:var(--purple)}.rank-B{background:#fff3c4;color:#8a6800}.unknown{color:#b16c00}.warning{color:#c05b00}.event-note{margin-top:7px;color:#817982;font-size:10px;font-weight:700}.area{color:var(--purple);font-weight:950}.star{color:var(--pink)}.event.done .event-card{opacity:1;background:#fff4a8;box-shadow:4px 4px 0 #211d28}.event-check{position:absolute;right:10px;top:10px;width:27px;height:27px;border:2px solid #211d28;border-radius:50%;background:#fff;color:#aaa;font-weight:950}.event.done .event-check{color:#fff;background:var(--pink)}
+    .timeline{position:relative}.event{display:grid;grid-template-columns:58px 1fr;gap:9px;margin:10px 0}.event-time{padding-top:14px;font-size:12px;font-weight:950;color:#4b4550}.event-time small{display:block;margin-top:2px;color:#a29ba5;font-size:9px}.event-card{position:relative;padding:13px 14px;border-radius:17px;background:#fff;border:1px solid var(--line)}.event-card:before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:5px;background:#c8c1ca}.event[data-kind="live"] .event-card:before{background:var(--pink)}.event[data-kind="benefit"] .event-card:before{background:var(--purple)}.event[data-rank="S"] .event-card{border-color:#ffb8d2;background:linear-gradient(135deg,#fff,#fff7fa)}.event[data-rank="A"] .event-card{border-color:#d8c9ff}.event[data-rank="B"] .event-card{border-color:#f0d276;background:#fffdf5}.event-title{font-size:14px;font-weight:900}.event-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:6px;color:var(--muted);font-size:10px;font-weight:800}.pill{padding:3px 6px;border-radius:20px;background:var(--pink-soft);color:var(--pink)}.benefit{background:var(--purple-soft);color:var(--purple)}.rank-pill{background:#f3f0f4;color:#6e6670}.rank-S{background:#ffe5ef;color:#e43c7c}.rank-A{background:var(--purple-soft);color:var(--purple)}.rank-B{background:#fff3c4;color:#8a6800}.unknown{color:#b16c00}.warning{color:#c05b00}.event-note{margin-top:7px;color:#817982;font-size:10px;font-weight:700}.area{color:var(--purple);font-weight:950}.star{color:var(--pink)}.event.go .event-card{opacity:1;background:#fff4a8;box-shadow:4px 4px 0 #211d28}.event.maybe .event-card{background:#f2edff;box-shadow:4px 4px 0 #7957d5}.event.skip .event-card{opacity:.62;background:#f1eef2}.event-status{display:inline-block;margin-left:5px;padding:2px 6px;border:1.5px solid var(--ink);border-radius:6px;background:#fff;font-size:9px;font-weight:950}.event.go .event-status{background:#ffdf4d}.event.maybe .event-status{background:#dcd0ff}.event.skip .event-status{background:#ece8ef}
     .decision-banner{margin:15px 0 10px;padding:15px 16px;border-radius:19px;background:linear-gradient(135deg,#fff1f6,#f3efff);border:1px solid #efcfe1}.decision-banner strong{display:block;color:#653c7e}.decision-banner small{color:var(--muted);font-weight:700}
     .empty{padding:40px 15px;text-align:center;color:var(--muted);font-size:13px;font-weight:800}
     .oshi-card{padding:0;overflow:hidden}.oshi-head{padding:17px 18px 13px;border-bottom:1px solid var(--line)}.oshi-head div{display:flex;justify-content:space-between;align-items:center}.oshi-head h3{margin:6px 0 0;font-size:20px}.oshi-events{padding:8px 18px}.oshi-line{display:grid;grid-template-columns:92px 1fr;gap:6px;padding:9px 0;font-size:12px;border-bottom:1px solid var(--line)}.oshi-line:last-child{border:0}.oshi-line b{color:var(--pink)}.rank{font-size:10px;font-weight:950;padding:5px 8px;border-radius:20px;background:var(--pink-soft);color:var(--pink)}.rank.sub{background:var(--purple-soft);color:var(--purple)}
@@ -38,6 +40,7 @@
     .route-card{display:grid;grid-template-columns:1fr 64px 1fr;align-items:center;padding:14px}.route-place{font-size:12px;font-weight:900}.walk{text-align:center;color:var(--pink);font-size:11px;font-weight:950}.walk:before{content:"徒歩";display:block;font-size:9px;color:var(--muted)}
     .notice{padding:12px 14px;border-radius:15px;background:#fff7e9;color:#895b14;font-size:11px;font-weight:750;line-height:1.6}
     .choice{position:relative}.choice h3{margin:5px 0;font-size:16px}.choice p{margin:0;color:var(--muted);font-size:11px;font-weight:700}.choice .time-tag{position:absolute;right:14px;top:14px;color:var(--purple);font-weight:950;font-size:12px}.recommended{border:1.5px solid #ffb8d2;background:linear-gradient(135deg,#fff,#fff5f9)}.recommended:after{content:"軸";position:absolute;right:13px;bottom:13px;padding:4px 7px;border-radius:20px;background:var(--pink);color:white;font-size:9px;font-weight:950}
+    .decision-table{display:grid;gap:8px}.decision-row{display:grid;grid-template-columns:68px 1fr 56px;gap:8px;align-items:center;padding:12px;border:2px solid var(--ink);border-radius:12px;background:#fff;box-shadow:3px 3px 0 #d9d0e2}.decision-row.axis{background:#fff4a8;box-shadow:4px 4px 0 #f0b928}.decision-row b{font-size:12px}.decision-row small{display:block;margin-top:3px;color:var(--muted);font-size:10px;font-weight:800}.decision-priority{text-align:center;font-size:10px;font-weight:950;color:var(--pink)}
     textarea{display:block;width:100%;min-height:135px;padding:14px;border:1px solid var(--line);border-radius:16px;resize:vertical;outline:none;background:#fbfafc;color:var(--ink);font-size:14px;line-height:1.6}textarea:focus{border-color:#e9a3c0;box-shadow:0 0 0 3px #fff0f6}.saved{height:16px;margin:8px 2px 0;text-align:right;color:var(--pink);font-size:10px;font-weight:850}
     .tabs{position:fixed;z-index:20;left:50%;bottom:0;transform:translateX(-50%);display:grid;grid-template-columns:repeat(5,1fr);width:100%;max-width:430px;padding:8px 8px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.94);border-top:1px solid var(--line);backdrop-filter:blur(18px)}.tab{border:0;background:transparent;color:#9a939d;padding:4px 0 1px;font-size:9px;font-weight:850}.tab svg{display:block;width:23px;height:23px;margin:0 auto 3px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.tab.on{color:var(--pink)}
     /* Graphic recording: marker colors, hand-drawn borders and sticky notes. */
@@ -54,8 +57,8 @@
     .filter{border:2px solid var(--ink);border-radius:10px;box-shadow:2px 2px 0 #d9d0e2}.filter.on{color:var(--ink);border-color:var(--ink);background:#ffdf4d;box-shadow:2px 2px 0 var(--ink)}
     .event{cursor:pointer;outline:none}.event:focus-visible .event-card,.event:focus-visible .decision-banner{outline:4px solid #78d8ff;outline-offset:2px}
     .event-card{border:2px solid var(--ink);border-radius:12px;box-shadow:3px 3px 0 #ded5e4;transition:transform .12s,box-shadow .12s}.event:nth-child(3n+1) .event-card{transform:rotate(-.25deg)}.event:nth-child(3n+2) .event-card{transform:rotate(.2deg)}.event:active .event-card{transform:translate(2px,2px);box-shadow:1px 1px 0 #211d28}
-    .event-card:before{width:7px;top:8px;bottom:8px}.event.done .event-card:after{content:"SELECTED";position:absolute;right:38px;top:-8px;padding:2px 7px;color:#fff;background:var(--pink);border:2px solid var(--ink);font-size:8px;font-weight:950;transform:rotate(3deg)}
-    .pill{border:1.5px solid currentColor;border-radius:7px}.decision-banner{position:relative;border:2px solid var(--ink);border-radius:12px;background:#fff4a8;box-shadow:4px 4px 0 #f0b928}.decision-event.done .decision-banner{background:#bdefff;box-shadow:4px 4px 0 var(--ink)}
+    .event-card:before{width:7px;top:8px;bottom:8px}.event.go .event-card:after{content:"行く";position:absolute;right:12px;top:-8px;padding:2px 7px;color:#fff;background:var(--pink);border:2px solid var(--ink);font-size:8px;font-weight:950;transform:rotate(3deg)}.event.maybe .event-card:after{content:"保留";position:absolute;right:12px;top:-8px;padding:2px 7px;color:var(--ink);background:#dcd0ff;border:2px solid var(--ink);font-size:8px;font-weight:950;transform:rotate(3deg)}
+    .pill{border:1.5px solid currentColor;border-radius:7px}.decision-banner{position:relative;border:2px solid var(--ink);border-radius:12px;background:#fff4a8;box-shadow:4px 4px 0 #f0b928}.decision-event.go .decision-banner{background:#bdefff;box-shadow:4px 4px 0 var(--ink)}.decision-event.maybe .decision-banner{background:#f2edff;box-shadow:4px 4px 0 var(--purple)}
     .venue-no{border:2px solid var(--ink);border-radius:50%;background:#ffdf4d}.notice{border:2px dashed #9b6a10;background:#fff5b8}
     textarea{border:2px solid var(--ink);border-radius:10px;background:#fffef8}
     .tabs{background:#fffdf7;border-top:3px solid var(--ink)}.tab.on{color:var(--pink)}.tab.on svg{filter:drop-shadow(2px 2px 0 #ffdf4d)}
@@ -72,6 +75,12 @@
       <div class="card"><div class="progress-row"><span>本命ミッション進捗</span><strong id="progressPct">0%</strong></div><div class="progress"><i id="progressBar"></i></div></div>
       <div class="section-head"><h2>NEXT EVENT</h2><span id="nextState">UP NEXT</span></div>
       <div class="card next" id="nextEvent"></div>
+      <div class="section-head"><h2>TODAY STATUS</h2><span>現場操作盤</span></div>
+      <div class="status-grid">
+        <div class="card status-tile"><strong id="goCount">0</strong><small>行く</small></div>
+        <div class="card status-tile"><strong id="maybeCount">0</strong><small>保留</small></div>
+        <div class="card status-tile"><strong id="skipCount">0</strong><small>スキップ</small></div>
+      </div>
       <div class="section-head"><h2>TODAY PRIORITY</h2><span>4 GROUPS</span></div>
       <div class="priority-grid">
         <div class="card mini main"><span class="label">MAIN</span><strong>キングサリ</strong><small>10:50 / 11:20</small></div>
@@ -92,7 +101,7 @@
 
     <section class="page" id="timeline">
       <div class="section-head"><h2>MY TIMELINE</h2><span id="selectedCount">0 SELECTED</span></div>
-      <p style="margin:0 2px 10px;color:var(--muted);font-size:10px;font-weight:800">ホームでチェックした予定だけを表示</p>
+      <p style="margin:0 2px 10px;color:var(--muted);font-size:10px;font-weight:800">ホームで「行く」「保留」にした予定だけを表示</p>
       <div class="timeline" id="timelineList"></div>
     </section>
 
@@ -112,10 +121,12 @@
     <section class="page" id="decision">
       <div class="section-head"><h2>判断メモ</h2><span>16:15—17:20</span></div>
       <div class="decision-banner"><strong>FLORERISA特典会を軸にした夕方判断</strong><small>16:15—17:20 · 体力・待機列・移動時間で判断</small></div>
-      <div class="card choice recommended"><span class="label">MAIN CHOICE</span><h3>FLORERISA 特典会</h3><p>特典会エリアR / 判断ゾーンの軸</p><span class="time-tag">16:15</span></div>
-      <div class="card choice"><span class="label" style="color:var(--purple)">OPTION A</span><h3>MiiS</h3><p>特典会の待機状況を見て判断</p><span class="time-tag">16:20</span></div>
-      <div class="card choice"><span class="label" style="color:var(--purple)">OPTION B</span><h3>アキストゼネコ</h3><p>移動時間と入場状況を確認</p><span class="time-tag">16:25</span></div>
-      <div class="card choice"><span class="label" style="color:var(--purple)">OPTION C</span><h3>はぐっと！</h3><p>時間に余裕がある場合の候補</p><span class="time-tag">17:00</span></div>
+      <div class="decision-table">
+        <div class="decision-row axis"><b>16:15</b><div><strong>FLORERISA 特典会</strong><small>特典会エリアR / 判断ゾーンの軸</small></div><div class="decision-priority">最優先</div></div>
+        <div class="decision-row"><b>16:20</b><div><strong>MiiS</strong><small>特典会の待機列が短い時だけ検討</small></div><div class="decision-priority">保留</div></div>
+        <div class="decision-row"><b>16:25</b><div><strong>アキストゼネコ</strong><small>移動時間と入場状況を見て判断</small></div><div class="decision-priority">保留</div></div>
+        <div class="decision-row"><b>17:00</b><div><strong>はぐっと！</strong><small>FLORERISA後に余裕があれば候補</small></div><div class="decision-priority">候補</div></div>
+      </div>
       <p class="notice">FLORERISA特典会を優先。余裕があれば17:00のはぐっと！だけ検討。夜のKAMAITACIに体力を残すため、ここで欲張りすぎない。</p>
       <div class="section-head"><h2>自由メモ</h2><span>AUTO SAVE</span></div>
       <div class="card"><textarea id="memo" placeholder="待機列、入場規制、移動、物販状況などを記録…"></textarea><div class="saved" id="saved"></div></div>
@@ -124,7 +135,7 @@
 
   <nav class="tabs" aria-label="メインナビゲーション">
     <button class="tab on" data-page="home" aria-label="ホーム"><svg viewBox="0 0 24 24"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10M9 20v-6h6v6"/></svg>ホーム</button>
-    <button class="tab" data-page="timeline" aria-label="タイムライン"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>タイムライン</button>
+    <button class="tab" data-page="timeline" aria-label="マイ予定"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>マイ予定</button>
     <button class="tab" data-page="oshi" aria-label="推し別"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>推し別</button>
     <button class="tab" data-page="map" aria-label="会場"><svg viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3Z"/><path d="M9 3v15M15 6v15"/></svg>会場</button>
     <button class="tab" data-page="decision" aria-label="判断"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M8.5 14.5A7 7 0 1 1 15.5 14.5c-.9.7-1.5 1.5-1.5 2.5h-4c0-1-.6-1.8-1.5-2.5Z"/></svg>判断</button>
@@ -176,42 +187,66 @@
       {from:"チェルシーホテル",to:"Star Lounge",walk:"約4分",note:"夕方から夜本命への移動"}
     ];
     const KEY="sparkquest-v3";
-    let state={checks:{},memo:"",page:"home",filter:"all"};
+    let state={checks:{},statuses:{},memo:"",page:"home",filter:"all"};
     try{state={...state,...JSON.parse(localStorage.getItem(KEY)||"{}")}}catch(e){}
+    if(!state.statuses)state.statuses={};
+    Object.keys(state.checks||{}).forEach(id=>{if(state.checks[id]&&!state.statuses[id])state.statuses[id]="go"});
     const save=()=>localStorage.setItem(KEY,JSON.stringify(state));
     const kindLabel=k=>k==="live"?"LIVE":k==="benefit"?"特典会":"判断";
     const displayName=e=>`${e.name}${e.kind==="benefit"?" 特典会":""}`;
+    const getStatus=id=>state.statuses[id]||"";
+    const statusLabel=s=>s==="go"?"行く":s==="maybe"?"保留":s==="skip"?"スキップ":"未定";
+    const statusButtons=id=>{
+      const s=getStatus(id);
+      return `<div class="status-actions" data-id="${id}" aria-label="予定ステータス">
+        <button class="status-btn go ${s==="go"?"on":""}" data-id="${id}" data-status="go">行く</button>
+        <button class="status-btn maybe ${s==="maybe"?"on":""}" data-id="${id}" data-status="maybe">保留</button>
+        <button class="status-btn skip ${s==="skip"?"on":""}" data-id="${id}" data-status="skip">スキップ</button>
+      </div>`;
+    };
 
     function renderChecklist(){
       const ids=events.filter(e=>["S","A"].includes(e.rank)&&e.kind!=="decision").map(e=>e.id);
-      document.getElementById("mainChecklist").innerHTML=ids.map(id=>{const e=events[id];return `<label class="check-row"><input type="checkbox" data-id="${id}" ${state.checks[id]?"checked":""}><span>${e.time} ${displayName(e)}</span></label>`}).join("");
-      document.querySelectorAll("#mainChecklist input").forEach(input=>input.onchange=()=>toggleDone(+input.dataset.id,input.checked));
-      const done=ids.filter(id=>state.checks[id]).length,pct=Math.round(done/ids.length*100);
+      document.getElementById("mainChecklist").innerHTML=ids.map(id=>{const e=events[id],s=getStatus(id);return `<div class="check-row"><div class="mission-top"><span>${e.time} ${displayName(e)}</span><span class="mission-status">${statusLabel(s)}</span></div>${statusButtons(id)}</div>`}).join("");
+      document.querySelectorAll("#mainChecklist .status-btn").forEach(b=>b.onclick=()=>setStatus(+b.dataset.id,b.dataset.status));
+      const done=ids.filter(id=>getStatus(id)==="go").length,pct=Math.round(done/ids.length*100);
       document.getElementById("progressCount").textContent=`${done} / ${ids.length} COMPLETE`;
       document.getElementById("progressPct").textContent=pct+"%";
       document.getElementById("progressBar").style.width=pct+"%";
-      const next=events.find(e=>["S","A"].includes(e.rank)&&e.kind!=="decision"&&!state.checks[e.id]);
+      const counts={go:0,maybe:0,skip:0};
+      events.forEach(e=>{const s=getStatus(e.id);if(counts[s]!==undefined)counts[s]++});
+      document.getElementById("goCount").textContent=counts.go;
+      document.getElementById("maybeCount").textContent=counts.maybe;
+      document.getElementById("skipCount").textContent=counts.skip;
+      const next=events.find(e=>["S","A"].includes(e.rank)&&e.kind!=="decision"&&getStatus(e.id)!=="go"&&getStatus(e.id)!=="skip");
       document.getElementById("nextEvent").innerHTML=next?`<span class="label">UP NEXT · RANK ${next.rank}</span><h3>${next.time} ${displayName(next)}</h3><p>${next.venue} ・ ${next.time}—${next.end}</p>`:`<span class="label">ALL CLEAR</span><h3>QUEST COMPLETE!</h3><p>優先ミッションをすべて達成しました。</p>`;
       document.getElementById("nextState").textContent=next?"UP NEXT":"COMPLETE";
     }
-    function toggleDone(id,checked){state.checks[id]=checked;save();renderChecklist();renderTimelines()}
+    function setStatus(id,status){
+      if(!status||getStatus(id)===status){delete state.statuses[id]}else{state.statuses[id]=status}
+      state.checks[id]=getStatus(id)==="go";
+      save();renderChecklist();renderTimelines();
+    }
+    function toggleGo(id){setStatus(id,getStatus(id)==="go"?"":"go")}
     function renderEventList(targetId,list,emptyMessage){
+      const statusClass=e=>getStatus(e.id)||"";
+      const statusBadge=e=>getStatus(e.id)?`<span class="event-status">${statusLabel(getStatus(e.id))}</span>`:"";
       document.getElementById(targetId).innerHTML=list.length?list.map(e=>e.kind==="decision"
-        ?`<article class="event decision-event ${state.checks[e.id]?"done":""}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${!!state.checks[e.id]}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="decision-banner"><strong>⚠ 16:15—17:20 判断ゾーン</strong><small>FLORERISA特典会 vs MiiS / アキストゼネコ / はぐっと！</small><button class="event-check" data-id="${e.id}" aria-label="選択切替">${state.checks[e.id]?"✓":"○"}</button></div></article>`
-        :`<article class="event ${state.checks[e.id]?"done":""}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${!!state.checks[e.id]}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="event-card"><div class="event-title">${e.rank==="S"?'<span class="star">★ </span>':""}${displayName(e)}</div><div class="event-meta"><span class="pill ${e.kind==="benefit"?"benefit":""}">${kindLabel(e.kind)}</span><span class="pill rank-pill rank-${e.rank}">RANK ${e.rank}</span><span class="${e.venue==="未確認"?"unknown":e.area?"area":""}">${e.venue==="未確認"?"⚠ 会場未確認":e.venue}</span>${/被り/.test(e.note)?'<span class="warning">⚠ 被り注意</span>':""}</div><div class="event-note">${e.note}</div><button class="event-check" data-id="${e.id}" aria-label="選択切替">${state.checks[e.id]?"✓":"○"}</button></div></article>`).join(""):`<div class="empty">${emptyMessage}</div>`;
+        ?`<article class="event decision-event ${statusClass(e)}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${getStatus(e.id)==="go"}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="decision-banner"><strong>⚠ 16:15—17:20 判断ゾーン ${statusBadge(e)}</strong><small>FLORERISA特典会 vs MiiS / アキストゼネコ / はぐっと！</small>${statusButtons(e.id)}</div></article>`
+        :`<article class="event ${statusClass(e)}" data-id="${e.id}" data-kind="${e.kind}" data-rank="${e.rank}" role="button" tabindex="0" aria-pressed="${getStatus(e.id)==="go"}"><div class="event-time">${e.time}<small>—${e.end}</small></div><div class="event-card"><div class="event-title">${e.rank==="S"?'<span class="star">★ </span>':""}${displayName(e)} ${statusBadge(e)}</div><div class="event-meta"><span class="pill ${e.kind==="benefit"?"benefit":""}">${kindLabel(e.kind)}</span><span class="pill rank-pill rank-${e.rank}">RANK ${e.rank}</span><span class="${e.venue==="未確認"?"unknown":e.area?"area":""}">${e.venue==="未確認"?"⚠ 会場未確認":e.venue}</span>${/被り/.test(e.note)?'<span class="warning">⚠ 被り注意</span>':""}</div><div class="event-note">${e.note}</div>${statusButtons(e.id)}</div></article>`).join(""):`<div class="empty">${emptyMessage}</div>`;
     }
     function bindEventSelection(){
-      document.querySelectorAll(".event-check").forEach(b=>b.onclick=()=>toggleDone(+b.dataset.id,!state.checks[b.dataset.id]));
+      document.querySelectorAll(".event .status-btn").forEach(b=>b.onclick=e=>{e.stopPropagation();setStatus(+b.dataset.id,b.dataset.status)});
       document.querySelectorAll(".event").forEach(card=>{
-        card.onclick=e=>{if(e.target.closest(".event-check"))return;toggleDone(+card.dataset.id,!state.checks[card.dataset.id])};
-        card.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggleDone(+card.dataset.id,!state.checks[card.dataset.id])}}
+        card.onclick=e=>{if(e.target.closest(".status-btn"))return;toggleGo(+card.dataset.id)};
+        card.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggleGo(+card.dataset.id)}}
       });
     }
     function renderTimelines(){
       const homeList=events.filter(e=>state.filter==="all"||e.kind===state.filter||(state.filter==="main"&&e.rank==="S")||(state.filter==="priority"&&e.rank==="A"));
-      const selectedList=events.filter(e=>state.checks[e.id]);
+      const selectedList=events.filter(e=>["go","maybe"].includes(getStatus(e.id)));
       renderEventList("homeTimelineList",homeList,"該当する予定はありません");
-      renderEventList("timelineList",selectedList,"まだ予定が選択されていません。ホームでカードをタップしてください。");
+      renderEventList("timelineList",selectedList,"まだ予定が選択されていません。ホームで「行く」か「保留」を選んでください。");
       document.getElementById("selectedCount").textContent=`${selectedList.length} SELECTED`;
       bindEventSelection();
     }
