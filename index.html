@@ -22,6 +22,7 @@
     .hero:after{content:"";position:absolute;width:170px;height:170px;right:-65px;top:-75px;border:36px solid rgba(255,255,255,.12);border-radius:50%}
     .eyebrow{font-size:11px;font-weight:950;letter-spacing:.13em;opacity:.9}.hero h1{margin:8px 0 4px;font-size:38px;letter-spacing:-.04em;line-height:1}.hero p{margin:10px 0 0;font-size:12px;font-weight:750;opacity:.9}
     .section-head{display:flex;justify-content:space-between;align-items:end;margin:23px 2px 10px}.section-head h2{margin:0;font-size:18px;letter-spacing:-.02em}.section-head span{font-size:11px;color:var(--muted);font-weight:800}
+    .section-note{margin:0 2px 10px;color:var(--muted);font-size:10px;font-weight:850;line-height:1.55}
     .card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:17px;margin:10px 0;box-shadow:var(--shadow)}
     .progress-row{display:flex;align-items:end;justify-content:space-between}.progress-row strong{font-size:30px;color:var(--pink)}.progress-row span{font-size:12px;color:var(--muted);font-weight:800}
     .progress{height:9px;margin:12px 0 4px;border-radius:20px;background:#f1edf2;overflow:hidden}.progress i{display:block;width:0;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--pink),var(--purple));transition:.3s}
@@ -33,7 +34,7 @@
     .quick-grid,.control-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.quick-btn,.control-btn,.venue-jump,.memo-btn{border:2px solid var(--ink);border-radius:12px;background:#fff;padding:9px 10px;font-size:11px;font-weight:950;box-shadow:3px 3px 0 #d9d0e2}.quick-btn{background:#fff4a8}.control-btn.danger{background:#ffe4ef}.control-btn.main{background:#dcd0ff}.control-btn.on{background:#211d28;color:#fff}.memo-btn{margin-top:10px;background:#fff4a8}
     .check-row{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:850}.check-row:last-child{border:0}.mission-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.mission-top span{line-height:1.35}.mission-status{font-size:10px;font-weight:950;color:var(--muted)}
     .status-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}.status-btn{border:2px solid var(--ink);border-radius:9px;background:#fff;padding:6px 9px;font-size:10px;font-weight:950;box-shadow:2px 2px 0 #d9d0e2}.status-btn.go.on{background:#ffdf4d;box-shadow:2px 2px 0 var(--ink)}.status-btn.maybe.on{background:#dcd0ff;box-shadow:2px 2px 0 var(--ink)}.status-btn.skip.on{background:#ece8ef;color:#777;box-shadow:2px 2px 0 var(--ink)}
-    .filters{display:flex;gap:7px;overflow:auto;padding:2px 0 9px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{flex:none;border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:99px;padding:8px 12px;font-size:11px;font-weight:900}.filter.on{color:#fff;border-color:var(--pink);background:var(--pink)}
+    .filters{position:sticky;top:54px;z-index:6;display:flex;gap:7px;overflow:auto;margin:0 -4px;padding:6px 4px 10px;background:rgba(255,253,247,.92);backdrop-filter:blur(12px);scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{flex:none;border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:99px;padding:8px 12px;font-size:11px;font-weight:900}.filter.on{color:#fff;border-color:var(--pink);background:var(--pink)}
     .timeline{position:relative}.event{display:grid;grid-template-columns:58px 1fr;gap:9px;margin:10px 0}.event-time{padding-top:14px;font-size:12px;font-weight:950;color:#4b4550}.event-time small{display:block;margin-top:2px;color:#a29ba5;font-size:9px}.event-card{position:relative;padding:13px 14px;border-radius:17px;background:#fff;border:1px solid var(--line)}.event-card:before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:5px;background:#c8c1ca}.event[data-kind="live"] .event-card:before{background:var(--pink)}.event[data-kind="benefit"] .event-card:before{background:var(--purple)}.event[data-rank="S"] .event-card{border-color:#ffb8d2;background:linear-gradient(135deg,#fff,#fff7fa)}.event[data-rank="A"] .event-card{border-color:#d8c9ff}.event[data-rank="B"] .event-card{border-color:#f0d276;background:#fffdf5}.event-title{font-size:14px;font-weight:900}.event-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:6px;color:var(--muted);font-size:10px;font-weight:800}.pill{padding:3px 6px;border-radius:20px;background:var(--pink-soft);color:var(--pink)}.benefit{background:var(--purple-soft);color:var(--purple)}.rank-pill{background:#f3f0f4;color:#6e6670}.rank-S{background:#ffe5ef;color:#e43c7c}.rank-A{background:var(--purple-soft);color:var(--purple)}.rank-B{background:#fff3c4;color:#8a6800}.unknown{color:#b16c00}.warning{color:#c05b00}.event-note{margin-top:7px;color:#817982;font-size:10px;font-weight:700}.area{color:var(--purple);font-weight:950}.star{color:var(--pink)}.event.go .event-card{opacity:1;background:#fff4a8;box-shadow:4px 4px 0 #211d28}.event.maybe .event-card{background:#f2edff;box-shadow:4px 4px 0 #7957d5}.event.skip .event-card{opacity:.62;background:#f1eef2}.event-status{display:inline-block;margin-left:5px;padding:2px 6px;border:1.5px solid var(--ink);border-radius:6px;background:#fff;font-size:9px;font-weight:950}.event.go .event-status{background:#ffdf4d}.event.maybe .event-status{background:#dcd0ff}.event.skip .event-status{background:#ece8ef}
     .move-card{display:grid;grid-template-columns:58px 1fr;gap:9px;margin:6px 0}.move-card div:last-child{padding:10px 12px;border:2px dashed var(--ink);border-radius:12px;background:#e8fbff;box-shadow:3px 3px 0 #9bdbea;font-size:11px;font-weight:900}.move-card b{color:var(--pink)}.move-card small{display:block;margin-top:3px;color:var(--muted);font-size:10px}.venue-jump{margin-top:9px;padding:6px 9px;background:#e8fbff;font-size:10px}
     .decision-banner{margin:15px 0 10px;padding:15px 16px;border-radius:19px;background:linear-gradient(135deg,#fff1f6,#f3efff);border:1px solid #efcfe1}.decision-banner strong{display:block;color:#653c7e}.decision-banner small{color:var(--muted);font-weight:700}
@@ -79,6 +80,17 @@
       <div class="card now-panel" id="nowPanel"></div>
       <div class="section-head"><h2>QUICK JUMP</h2><span>一発移動</span></div>
       <div class="quick-grid" id="quickJumps"></div>
+
+      <div class="section-head"><h2>LIVE TIMELINE</h2><span>画像左側</span></div>
+      <div class="filters" id="filters">
+        <button class="filter on" data-filter="all">ライブ全体</button><button class="filter" data-filter="go">行く</button><button class="filter" data-filter="maybe">保留</button><button class="filter" data-filter="skip">スキップ</button><button class="filter" data-filter="live">LIVE</button><button class="filter" data-filter="benefit">物販</button><button class="filter" data-filter="decision">判断</button><button class="filter" data-filter="main">本命</button><button class="filter" data-filter="priority">優先</button><button class="filter" data-filter="conflict">被り</button>
+      </div>
+      <p class="section-note">左側のライブタイテを表示。右側の物販時間は物販リスト/物販フィルタで確認。</p>
+      <div class="timeline" id="homeTimelineList"></div>
+
+      <div class="section-head"><h2>物販リスト</h2><span>右側時間</span></div>
+      <div class="benefit-list" id="benefitList"></div>
+
       <div class="section-head"><h2>CONTROL DECK</h2><span>準備/表示</span></div>
       <div class="control-grid">
         <button class="control-btn main" id="prepMain">本命だけ行く</button>
@@ -110,18 +122,8 @@
       <div class="section-head"><h2>CHECKLIST</h2><span>AUTO SAVE</span></div>
       <div class="card" id="mainChecklist"></div>
 
-      <div class="section-head"><h2>物販リスト</h2><span>MERCH</span></div>
-      <div class="benefit-list" id="benefitList"></div>
-
       <div class="section-head"><h2>被り注意まとめ</h2><span>CONFLICTS</span></div>
       <div class="benefit-list" id="conflictList"></div>
-
-      <div class="section-head"><h2>LIVE TIMELINE</h2><span>画像左側</span></div>
-      <div class="filters" id="filters">
-        <button class="filter on" data-filter="all">ライブ全体</button><button class="filter" data-filter="go">行く</button><button class="filter" data-filter="maybe">保留</button><button class="filter" data-filter="skip">スキップ</button><button class="filter" data-filter="live">LIVE</button><button class="filter" data-filter="benefit">物販</button><button class="filter" data-filter="decision">判断</button><button class="filter" data-filter="main">本命</button><button class="filter" data-filter="priority">優先</button><button class="filter" data-filter="conflict">被り</button>
-      </div>
-      <p style="margin:0 2px 10px;color:var(--muted);font-size:10px;font-weight:800">左側のライブタイテを表示。右側の物販時間は物販リスト/物販フィルタで確認。</p>
-      <div class="timeline" id="homeTimelineList"></div>
     </section>
 
     <section class="page" id="timeline">
