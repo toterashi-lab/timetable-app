@@ -116,11 +116,11 @@
       <div class="section-head"><h2>被り注意まとめ</h2><span>CONFLICTS</span></div>
       <div class="benefit-list" id="conflictList"></div>
 
-      <div class="section-head"><h2>ALL TIMELINE</h2><span>全タイテ</span></div>
+      <div class="section-head"><h2>LIVE TIMELINE</h2><span>画像左側</span></div>
       <div class="filters" id="filters">
-        <button class="filter on" data-filter="all">すべて</button><button class="filter" data-filter="go">行く</button><button class="filter" data-filter="maybe">保留</button><button class="filter" data-filter="skip">スキップ</button><button class="filter" data-filter="live">LIVE</button><button class="filter" data-filter="benefit">物販</button><button class="filter" data-filter="decision">判断</button><button class="filter" data-filter="main">本命</button><button class="filter" data-filter="priority">優先</button><button class="filter" data-filter="conflict">被り</button>
+        <button class="filter on" data-filter="all">ライブ全体</button><button class="filter" data-filter="go">行く</button><button class="filter" data-filter="maybe">保留</button><button class="filter" data-filter="skip">スキップ</button><button class="filter" data-filter="live">LIVE</button><button class="filter" data-filter="benefit">物販</button><button class="filter" data-filter="decision">判断</button><button class="filter" data-filter="main">本命</button><button class="filter" data-filter="priority">優先</button><button class="filter" data-filter="conflict">被り</button>
       </div>
-      <p style="margin:0 2px 10px;color:var(--muted);font-size:10px;font-weight:800">カードをタップして予定を選択・解除</p>
+      <p style="margin:0 2px 10px;color:var(--muted);font-size:10px;font-weight:800">左側のライブタイテを表示。右側の物販時間は物販リスト/物販フィルタで確認。</p>
       <div class="timeline" id="homeTimelineList"></div>
     </section>
 
@@ -305,7 +305,7 @@
     function toggleGo(id){setStatus(id,getStatus(id)==="go"?"":"go")}
     function passFilter(e){
       if(state.hideSkip&&getStatus(e.id)==="skip")return false;
-      if(state.filter==="all")return true;
+      if(state.filter==="all")return e.kind==="live";
       if(["go","maybe","skip"].includes(state.filter))return getStatus(e.id)===state.filter;
       if(state.filter==="conflict")return isConflict(e);
       return e.kind===state.filter||(state.filter==="main"&&e.rank==="S")||(state.filter==="priority"&&e.rank==="A");
